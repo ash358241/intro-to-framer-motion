@@ -1,0 +1,53 @@
+.homeComponent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    border-radius: 10px;
+    width: 80%;
+    margin: 130px auto;
+    background-color: #1B1938;
+    color: #fff;
+    min-height: 100%;
+    
+}
+
+.quantity{
+    display: flex;
+    font-weight: 700;
+}
+
+.quantityTwo, .quantityThree{
+    margin-left: 30px;
+}
+
+.content{
+    padding: 0px 50px;
+}
+
+.content >p{
+    opacity: 0.7;
+}
+
+
+.pic{
+    max-width: 100%;
+    height: auto;
+    margin-left: 7%;
+    border-radius: 0 10px 10px 0;
+    
+}
+
+@media(max-width: 668px){
+    .homeComponent{
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+
+    }
+
+    .pic{
+        width: 100%;
+        margin-top: 5%;
+        margin-left: 0%;
+        color: red;
+    }
+}
